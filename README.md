@@ -45,7 +45,8 @@ Contains the React application, including:
 ```bash
 cd backend-rest
 npm install
-npm run dev
+# make sure MongoDB Atlas is running and .env is configured
+npm start
 ```
 ### Frontend
 ```bash
