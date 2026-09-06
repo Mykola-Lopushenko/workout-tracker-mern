@@ -2,6 +2,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import RetrievePage from "./pages/RetrievePage.jsx";
 import CreatePage from "./pages/CreatePage.jsx";
 import UpdatePage from "./pages/UpdatePage.jsx";
+import "./App.css";
 
 function App() {
   return (
