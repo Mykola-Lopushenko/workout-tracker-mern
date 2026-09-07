@@ -1,57 +1,81 @@
 # 🏋️ Workout Tracker — MERN Application
 
-A full-stack **MERN web application** that allows users to **create, view, update, and delete** workout exercises.
+A full-stack **MERN workout tracking application** that allows users to create, view, update, and delete workout exercises.
 
-## Features
+The application includes a React frontend, an Express REST API, MongoDB Atlas for persistent storage, and is deployed online using Railway.
 
-- Full CRUD functionality for workout exercises
-- REST API built with Node.js and Express
-- MongoDB Atlas for persistent data storage
-- React frontend with client-side routing
-- Form validation and backend error handling (HTTP 400 / 404 / 201 / 200)
-- Clean project structure with separated frontend and backend
-- Custom styling using CSS only
+## 🌐 Live Demo
 
-## Project Structure
+👉 [Open Workout Tracker](https://workout-tracker-mern-production-7772.up.railway.app/)
 
-The project is organized into two main directories:
+## ✨ Features
 
-*Backend-rest*
+- Create new workout exercises
+- View all saved exercises
+- Update existing exercises
+- Delete exercises with confirmation
+- Persistent data storage with MongoDB Atlas
+- RESTful API using Express
+- Client-side routing with React Router
+- Backend validation and error handling
+- Responsive custom CSS design
+- Custom confirmation and success modals
+- Production deployment on Railway
 
-Contains the REST API, including:
-- Express server and routes
-- Mongoose models and controllers
-- HTTP test requests
-- Environment configuration
+## 🛠 Tech Stack
 
-*Frontend-react*
-
-Contains the React application, including:
-- Pages and reusable components
-- Client-side routing
-- Styling and layout
-- Vite configuration
-
-## What This Project Demonstrates
-
-- Designing a RESTful API with proper HTTP status codes
-- Separating frontend and backend concerns
-- Working with MongoDB using Mongoose
-- Implementing client-side routing in React
-
-## Getting Started
-> Run backend and frontend in separate terminal windows.
-### Backend
-```bash
-cd backend-rest
-npm install
-# make sure MongoDB Atlas is running and .env is configured
-npm start
-```
 ### Frontend
-```bash
-cd frontend-react
-npm install
-npm run dev
+- React
+- React Router
+- Vite
+- JavaScript
+- CSS
+
+### Backend
+- Node.js
+- Express
+- Mongoose
+- REST API
+
+### Database
+- MongoDB Atlas
+
+### Deployment
+- Railway
+
+## 📁 Project Structure
+
+```text
+workout-tracker-mern/
+│
+├── backend-rest/
+│   ├── exercise-controller.mjs
+│   ├── exercise-model.mjs
+│   ├── package.json
+│   └── .env
+│
+├── frontend-react/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── ExerciseRow.jsx
+│   │   │   ├── ExerciseTable.jsx
+│   │   │   └── Modal.jsx
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── CreatePage.jsx
+│   │   │   ├── RetrievePage.jsx
+│   │   │   └── UpdatePage.jsx
+│   │   │
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   ├── index.css
+│   │   └── main.jsx
+│   │
+│   ├── vite.config.js
+│   └── package.json
+│
+├── .gitignore
+├── package.json
+└── README.md
 ```
 
